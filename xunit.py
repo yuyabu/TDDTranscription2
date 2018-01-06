@@ -14,21 +14,16 @@ u""" テストか呼び出されたかどうかを記録するクラス
 
 """
 class WasRun(TestCase):
-    def __init__(self,name):
-        self.wasRun = None
-        super().__init__(name)
-
-
     def testMethod(self):
         self.wasRun = 1
     def setUp(self):
+        self.wasRun = None
         self.wasSetUp = 1
 u""" テストケースを呼び出すクラス
 """
 class TestCaseTest(TestCase):
     def testRunning(self):
         test = WasRun("testMethod")
-        assert(not test.wasRun)
         test.run()
         assert(test.wasRun)
     def testSetUp(self):
