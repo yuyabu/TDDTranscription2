@@ -19,5 +19,8 @@ class TestCaseTest(TestCase):
         assert(not test.wasRun)
         test.run()
         assert(test.wasRun)
+    def testSetUp(self):
+        pass
 
 TestCaseTest("testRunning").run()
+TestCaseTest("testSetUp").run()
