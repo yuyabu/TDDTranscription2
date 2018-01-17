@@ -12,7 +12,6 @@ class WasRun(TestCase):
 	def testMethod(self):
 		self.log = self.log + "testMethod "
 	def setUp(self):
-		self.wasRun = None
 		self.log = "setUp "
 
 class TestCaseTest(TestCase):
