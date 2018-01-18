@@ -46,4 +46,4 @@ class TestCaseTest(TestCase):
 		assert("1 run, 1failed" ==result.summary())
 TestCaseTest("testTemplateMethod").run()
 TestCaseTest("testResult").run()
-TestCaseTest("testFailedResult").run()
+# TestCaseTest("testFailedResult").run()
